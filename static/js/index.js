@@ -8,13 +8,16 @@ const listBox = document.querySelector(".gongde");
 const setting = document.querySelector(".setting");
 var gd = 100;
 //声音素材
-const audio = new Audio();
-audio.src = "./static/audio.mp3"
-audio.volume = 1;
+//const audio = new Audio();
+//audio.src = "./static/audio.mp3"
+//audio.volume = 1;
 
 //动态创建功德弹窗
 const createAlert = () => {
-  audio.pause()
+  const audio = new Audio();
+  audio.src = "./static/audio.mp3"
+  audio.volume = 1;
+  //audio.pause()
   audio.play()
   const div = document.createElement("div");
   div.className = "gongde-item"
