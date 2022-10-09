@@ -37,7 +37,7 @@ let lastTime = new Date().getTime();
 
 //木鱼图片按下事件
 muyu.onclick = () => {
-  if (new Date().getTime() - 500 > lastTime) {
+  if (new Date().getTime() - 10 > lastTime) {
     createAlert()
     muyuScale();
     lastTime = new Date().getTime();
@@ -47,7 +47,7 @@ muyu.onclick = () => {
 window.addEventListener("keydown", function (event) {
   const { code } = event;
   if (code == 'Space') {
-    if (new Date().getTime() - 500 > lastTime) {
+    if (new Date().getTime() - 10 > lastTime) {
       muyuScale();
       createAlert()
       lastTime = new Date().getTime();
