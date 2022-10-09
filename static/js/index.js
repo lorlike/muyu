@@ -6,7 +6,7 @@
 const muyu = document.querySelector("#muyu-img");
 const listBox = document.querySelector(".gongde");
 const setting = document.querySelector(".setting");
-var gd = 100;
+var gd = 1;
 //声音素材
 //const audio = new Audio();
 //audio.src = "./static/audio.mp3"
